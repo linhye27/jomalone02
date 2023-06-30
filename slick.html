@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <script src="./script/jquery-3.7.0.min.js"></script>
+    <script src="./css/slick.min.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #slide{ 
+            width: 70%;
+            height: 70vh;
+            background-color: beige;
+            margin: 200px auto;
+            overflow: hidden;
+        }
+        .box img{
+            width: 20%;
+        }
+    </style>
+    <script src="./script/jquery-3.7.0.min.js"></script>
+    <script src="./css/slick.min.js"></script>
+    <script>
+        $(function(){
+
+            $("slide").slick({
+                Infinity:true,
+                autoplay:true,//자동재생
+                speed:5000, //속도
+                slidesToshow:3, //보여지는 개수
+                slidesToScroll:2, 
+                responsive: {
+
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="slide">
+        <div class="box">
+            <a href="#">
+                <img src="../slick/img1.png" alt="1">
+            </a>
+            <h3>title</h3>
+        </div>
+        <div class="box">
+            <a href="#">
+                <img src="../slick/img2.png" alt="2">
+            </a>
+            <h3>title</h3>
+        </div>
+        <div class="box">
+            <a href="#">
+                <img src="../slick/img3.png" alt="3">
+            </a>
+            <h3>title</h3>
+        </div>
+        <div class="box">
+            <a href="#">
+                <img src="../slick/img4.png" alt="4">
+            </a>
+            <h3>title</h3>
+        </div>
+        <div class="box">
+            <a href="#">
+                <img src="../slick/img1.png" alt="5">
+            </a>
+            <h3>title</h3>
+        </div>
+    </div>
+</body>
+</html>
